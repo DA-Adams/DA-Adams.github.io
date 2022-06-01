@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Fake News Classifier 
+title: HW4 - Fake News Classifier 
 ---
-## Homework 4 - Fake News Classification
+## Classifying Misinformation with NLP
 
 For this assignment we're going to develop a misinformation (colloqually "fake news") classifier using TensorFlow. 
 
@@ -468,7 +468,7 @@ def standardization(input_data):
   return no_punctuation 
 ```
 
-#Vectorization
+# Vectorization
 
 Next, we'll need to represent the text as a vector, replacing words with their frequency rank within the dataset.
 
@@ -584,7 +584,7 @@ keras.utils.plot_model(model1)
 
 
     
-![png](output_38_0.png)
+![output_38_0.png](/images/output_38_0.png)
     
 
 
@@ -675,7 +675,7 @@ plt.plot(history1.history["val_accuracy"], label = "validation accuracy")
 
 
     
-![png](output_44_1.png)
+![output_44_1.png](/images/output_44_1.png)
     
 
 
@@ -746,7 +746,7 @@ keras.utils.plot_model(model2)
 
 
     
-![png](output_49_0.png)
+![output_49_0.png](/images/output_49_0.png)
     
 
 
@@ -829,7 +829,7 @@ plt.plot(history2.history["val_accuracy"], label = "validation accuracy")
 
 
     
-![png](output_52_1.png)
+![output_52_1.png](/images/output_52_1.png)
     
 
 
@@ -932,7 +932,7 @@ keras.utils.plot_model(model3)
 
 
     
-![png](output_63_0.png)
+![output_63_0.png](/images/output_63_0.png)
     
 
 
@@ -1009,7 +1009,7 @@ plt.plot(history3.history["val_accuracy"], label = "validation accuracy")
 
 
     
-![png](output_66_1.png)
+![output_66_1.png](/images/output_66_1.png)
     
 
 
@@ -1275,7 +1275,7 @@ fig = px.scatter(embedding_df,
 fig.show()
 ```
 
-{{ "{% include hw4_plotly.html " }}%}
+{% include hw4_plotly.html %}
 
 
 So, looking at the visualization based on the weights extracted from our embedding layer what can what see?
