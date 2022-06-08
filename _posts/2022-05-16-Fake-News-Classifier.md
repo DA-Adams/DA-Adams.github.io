@@ -655,31 +655,8 @@ history1 = model1.fit(train,
     180/180 [==============================] - 1s 6ms/step - loss: 0.1911 - accuracy: 0.9265 - val_loss: 0.1492 - val_accuracy: 0.9481
 
 
-So, we're hitting mid 90's for accuracy on our validation set just on title alone!
-
-Lets visualize this model's performance real quick:
-
-
-```python
-fig = plt.figure()
-plt.plot(history1.history["accuracy"], label = "training accuracy")
-plt.plot(history1.history["val_accuracy"], label = "validation accuracy")
-```
-
-
-
-
-    [<matplotlib.lines.Line2D at 0x7f4b4b5adb10>]
-
-
-
-
-    
-![output_44_1.png](/images/output_44_1.png)
-    
-
-
-Validation performance actually slightly exceed training performance...guess we're not overfitting!
+So, we're hitting **mid 90's for accuracy on our validation set** just on title alone!
+**Validation performance actually slightly exceed training performance**...guess we're not overfitting!
 
 # Second Model
 
@@ -814,26 +791,7 @@ history2 = model2.fit(train,
 
 
 
-```python
-fig = plt.figure()
-plt.plot(history2.history["accuracy"], label = "training accuracy")
-plt.plot(history2.history["val_accuracy"], label = "validation accuracy")
-```
-
-
-
-
-    [<matplotlib.lines.Line2D at 0x7f4b708fc5d0>]
-
-
-
-
-    
-![output_52_1.png](/images/output_52_1.png)
-    
-
-
-Wow, validation accuracy one again exceeds training accuracy, this time consistently hitting around 99%!
+Wow, validation accuracy one again exceeds training accuracy, this time consistently hitting **around 99%**!
 
 # Third Model 
 
@@ -993,27 +951,7 @@ history3 = model3.fit(train,
     180/180 [==============================] - 3s 16ms/step - loss: 0.0059 - accuracy: 0.9984 - val_loss: 0.0028 - val_accuracy: 0.9996
 
 
-
-```python
-fig = plt.figure()
-plt.plot(history3.history["accuracy"], label = "training accuracy")
-plt.plot(history3.history["val_accuracy"], label = "validation accuracy")
-```
-
-
-
-
-    [<matplotlib.lines.Line2D at 0x7f4b4b09e190>]
-
-
-
-
-    
-![output_66_1.png](/images/output_66_1.png)
-    
-
-
-The combined model achieves nearly perfect accuracy. It fluctates between perfect and a very fractional percentage off perfect fairly quickly. You could likely get away with reducing the epochs for this model. Overall, good results. 
+The combined model achieves **nearly perfect accuracy (over 99%)**. It fluctates between perfect, and a very fractional percentage off perfect, fairly quickly. You could likely get away with reducing the epochs for this model. Overall, good results. 
 
 # Model Evaluation
 
@@ -1244,7 +1182,7 @@ model3.evaluate(test_ds)
 
 
 
-Great, it scored 99% accuracy on the unseen dataset. 
+Great, it scored **99% accuracy on the unseen dataset**. 
 
 #Embedding Visualization
 
